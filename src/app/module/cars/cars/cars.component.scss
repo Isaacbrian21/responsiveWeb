@@ -1,0 +1,54 @@
+.container{
+    padding: 50px;
+    background: transparent;
+    display: inline-block;
+}
+
+.header{
+    padding: 10px;
+    background: white;
+    border-radius: 1em;
+    
+}
+
+.carousel{
+    background: white;
+    border: 1px solid;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    border-radius:0.5em 0.5em 0 0 ;
+    
+    
+}
+
+.carousel-image{
+   width: 100%;
+   object-fit: cover;
+   height: 270px;
+   margin: 0 auto;
+   
+    
+}
+
+.list-ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}

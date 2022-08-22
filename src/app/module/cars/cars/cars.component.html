@@ -1,0 +1,30 @@
+<div class="container">
+   
+    <div class="carousel">
+        <ul class="list-ul" >
+            <li class="list-li"  *ngFor="let car of cars; let i = index">
+             <ng-container *ngIf="i===currentIndex">
+                <img class="carousel-image" [src]="car.url" @carouselAnimation />
+                <h2>{{car.name}}  <h6>({{currentIndex +1}} / {{cars.length}})</h6>
+                </h2>
+             </ng-container>
+            </li>
+        </ul>
+
+        <div>
+            <button class="next" (click)="next()" > > </button>
+            <button class="prev" (click)="prev()"> < </button>
+        </div>
+        <div [ngStyle]="{
+            'border-top': '1px solid #transparent',
+            width:counterValue,
+            'transition': 'all 0.1s linear'
+        }">
+    
+        </div>
+
+        
+
+
+    </div>
+</div>
